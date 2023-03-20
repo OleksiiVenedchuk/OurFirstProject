@@ -16,12 +16,12 @@ public class BasePage {
     public WebElement findElement(String locator){
         return driver.findElement(By.xpath(locator));}
 
-//    int basicTime = 10;
-//
-//    public WebElement waitElementToBeVisible (String locator){
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(basicTime));
-//        return wait.until(ExpectedCondition);
-//    }
+    int basicTime = 10;
+
+    public WebElement waitElementToBeVisible (String locator){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(basicTime));
+        return wait.until(ExpectedCondition.elementToBeClickable(By.xpath(locator)));
+    }
 
 
 
