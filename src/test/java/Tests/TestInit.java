@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class TestInit {
 
-    WebDriver driver;
+   public WebDriver driver;
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -18,7 +18,7 @@ public class TestInit {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
     }
-    public void openWebsite(String url){driver.get(url);}
+
 
         public void sleep(int seconds){
            try{
@@ -30,11 +30,11 @@ public class TestInit {
 
 
 
-
-    @AfterMethod
-    public void closeIt(){
-        driver.quit();
-    }
+//
+//    @AfterMethod
+//    public void closeIt(){
+//        driver.quit();
+//    }
 
 
 }

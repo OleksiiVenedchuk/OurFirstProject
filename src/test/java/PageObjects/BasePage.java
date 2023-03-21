@@ -3,7 +3,6 @@ package PageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -30,6 +29,9 @@ public class BasePage {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
         return driver.findElements(By.xpath(locator));
     }
+
+    public void openWebsite(String url){driver.get(url);}
+
 
 
 
