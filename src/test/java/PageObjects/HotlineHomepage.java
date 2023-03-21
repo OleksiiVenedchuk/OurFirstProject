@@ -1,22 +1,26 @@
 package PageObjects;
 
-import PageObjects.HotlineHomepage;
-import Tests.TestInit;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
-public class HotlineHomepage extends TestInit {
-    @Test
-    public void hotlineLanguageChangeTest () {
-        HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
-        metaHomePage.goToTranslatorPage();
-        sleep(3);
-        metaHomePage.changeFirstLanguage();
-        metaHomePage.changeSecondLanguage();
-        metaHomePage.switchLanguages();
-        metaHomePage.putTextInField("some text");
-        metaHomePage.changeKindOfText();
-        sleep(2);
-        metaHomePage.openCloseKeyboard();
-        metaHomePage.translateBtn();}
+
+public class HotlineHomepage extends BasePage {
+    public HotlineHomepage(WebDriver driver) {
+        super(driver);
+    }
+    public void goToHotline(){openWebsite("https://hotline.ua/");}
+
+    public void clickOnCityButton(){waitElementToBeVisible("//div[@title]").click();}
+//    public void cityFindField(){waitElementToBeVisible("//*[@placeholder=\"Почніть вводити назву\"]").sendKeys("Житомир\n");}
+//    public void highlightingCityElements(){waitElementsToBeVisible("//*[@aria-activedescendant=\"autosuggest__results-item--0\"]");}
+    public void clickOnPoltavaButton(){waitElementToBeVisible("//span[contains(text(),'Полтава')]").click();}
+
+    public WebElement poltavaButton(){return driver.findElement((By.xpath("//*[contains(text(),'Полтава')]")));}
+
+
+
+
+
+
 }

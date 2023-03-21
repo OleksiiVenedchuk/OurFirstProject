@@ -11,7 +11,7 @@ public class HotlineCityChangingTest extends TestInit{
 
     @Test
     public void CityChanging(){
-        HotlineHomepage hotlineHomepage = new HotlineHomepage();
+        HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
         hotlineHomepage.goToHotline();
         hotlineHomepage.clickOnCityButton();
         hotlineHomepage.clickOnPoltavaButton();
