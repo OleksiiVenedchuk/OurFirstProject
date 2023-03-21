@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class TestInit {
 
-    WebDriver driver;
+    public WebDriver driver;
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
