@@ -20,7 +20,7 @@ public class BasePage {
     int basicTime = 10;
 
     public WebElement waitElementToBeVisible (String locator){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(basicTime));
+        WebDriverWait wait = new WebDriverWait(driver,  Duration.ofSeconds(basicTime));
         return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 
