@@ -18,11 +18,19 @@ public class HotlineHomepage extends BasePage {
 
     public WebElement poltavaButton(){return driver.findElement((By.xpath("//*[contains(text(),'Полтава')]")));}
 
-    public WebElement searchField(){return driver.findElement(By.xpath("//*[@type = 'text' and @autocomplete='off']"));}
-    public void clickOnSearchButton(){waitElementToBeVisible("//*[@class = 'search__btn flex middle-xs center-xs']").click();}
 
 
+    public void changeSecondLanguage () {
+            waitElementToBeVisible("//div[contains(@class, 'lang-button')]").click();
+            waitElementToBeVisible("//*[contains(@class, 'lang-item') and  contains(text(),'UA')]").click();}
 
+    public void switchFirstLanguages() {waitElementToBeVisible("//div[@data-eventlabel = 'ru']").click();}
+
+    public void switchSecondLanguages() {waitElementToBeVisible("//div[@data-eventlabel = 'uk']").click();}
+
+//    public WebElement changeLanguage(){return driver.findElement((By.xpath("//div[contains(@class, 'lang-button')]")));}
+
+    public WebElement resultOfLanguageChange(){return waitElementToBeVisible("//div[@class = 'location__city']");}
 
 
 
