@@ -7,8 +7,6 @@
     <list default="true" id="fa05349e-57a8-4b7f-980f-279bc109faed" name="Changes" comment="he">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/HotlineHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/HotlineHomepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LanguageChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LanguageChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestInit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.LanguageChange.testLanguageChange">
+  <component name="RunManager" selected="TestNG.HotlineSearchTest">
     <configuration name="HotlineCityChangingTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="OurFirstProject" />
       <extension name="coverage">
@@ -71,6 +69,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.HotlineCityChangingTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotlineSearchTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="OurFirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.HotlineSearchTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -115,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HotlineSearchTest" />
         <item itemvalue="TestNG.LanguageChange.testLanguageChange" />
         <item itemvalue="TestNG.LanguageChange" />
         <item itemvalue="TestNG.HotlineCityChangingTest" />
