@@ -1,0 +1,67 @@
+Index: src/test/java/PageObjects/HotlineHomepage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package PageObjects;\n\nimport PageObjects.HotlineHomepage;\nimport Tests.TestInit;\nimport org.testng.Assert;\nimport org.testng.annotations.Test;\n\npublic class HotlineHomepage extends TestInit {\n    @Test\n    public void hotlineLanguageChangeTest () {\n        HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);\n        metaHomePage.goToTranslatorPage();\n        sleep(3);\n        metaHomePage.changeFirstLanguage();\n        metaHomePage.changeSecondLanguage();\n        metaHomePage.switchLanguages();\n        metaHomePage.putTextInField(\"some text\");\n        metaHomePage.changeKindOfText();\n        sleep(2);\n        metaHomePage.openCloseKeyboard();\n        metaHomePage.translateBtn();}\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/PageObjects/HotlineHomepage.java b/src/test/java/PageObjects/HotlineHomepage.java
+--- a/src/test/java/PageObjects/HotlineHomepage.java	(revision f229bb133a609669aa49d9d3b6a4cddfe4b549aa)
++++ b/src/test/java/PageObjects/HotlineHomepage.java	(date 1679394633783)
+@@ -8,15 +8,11 @@
+ public class HotlineHomepage extends TestInit {
+     @Test
+     public void hotlineLanguageChangeTest () {
+-        HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
+-        metaHomePage.goToTranslatorPage();
++        HotlineHomepage hotlineHomepage = new HotlineHomepage();
++        HotlineHomepage.goToTranslatorPage();
+         sleep(3);
+-        metaHomePage.changeFirstLanguage();
+-        metaHomePage.changeSecondLanguage();
+-        metaHomePage.switchLanguages();
+-        metaHomePage.putTextInField("some text");
+-        metaHomePage.changeKindOfText();
+-        sleep(2);
+-        metaHomePage.openCloseKeyboard();
+-        metaHomePage.translateBtn();}
++        HotlineHomepage.changeFirstLanguage();
++        HotlineHomepage.changeSecondLanguage();
++        HotlineHomepage.switchLanguages();
++        }
+ }
+Index: src/test/java/Tests/HotlineCityChangingTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/HotlineCityChangingTest.java b/src/test/java/Tests/HotlineCityChangingTest.java
+new file mode 100644
+--- /dev/null	(date 1679394633776)
++++ b/src/test/java/Tests/HotlineCityChangingTest.java	(date 1679394633776)
+@@ -0,0 +1,25 @@
++package Tests;
++
++
++import org.testng.Assert;
++import org.testng.annotations.Test;
++import PageObjects.HotlineHomepage;
++
++public class HotlineCityChangingTest extends TestInit{
++
++
++
++    @Test
++    public void CityChanging(){
++        HotlineHomepage hotlineHomepage = new HotlineHomepage();
++        hotlineHomepage.goToHotline();
++        hotlineHomepage.clickOnCityButton();
++        hotlineHomepage.clickOnPoltavaButton();
++        Assert.assertTrue(hotlineHomepage.poltavaButton().isDisplayed());
++
++
++    }
++
++
++
++}

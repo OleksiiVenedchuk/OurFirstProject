@@ -36,5 +36,21 @@ public class HotlineHomepage extends BasePage {
             testInit.sleep(5);
         }
     }
+    public void changeFirstLanguage() {
+        waitElementToBeVisible("//div[contains(@class, 'lang-button')]").click();
+        waitElementToBeVisible("//*[contains(@class, 'lang-item') and  contains(text(),'RU')]").click();}
+
+    public void changeSecondLanguage () {
+        waitElementToBeVisible("//div[contains(@class, 'lang-button')]").click();
+        waitElementToBeVisible("//*[contains(@class, 'lang-item') and  contains(text(),'UA')]").click();}
+
+    public void switchFirstLanguages() {waitElementToBeVisible("//div[@data-eventlabel = 'ru']").click();}
+
+    public void switchSecondLanguages() {waitElementToBeVisible("//div[@data-eventlabel = 'uk']").click();}
+
+//    public WebElement changeLanguage(){return driver.findElement((By.xpath("//div[contains(@class, 'lang-button')]")));}
+
+    public WebElement resultOfLanguageChange(){return waitElementToBeVisible("//div[@class = 'location__city']");}
+
 
 }
