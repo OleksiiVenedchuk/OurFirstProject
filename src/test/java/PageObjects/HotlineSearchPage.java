@@ -9,6 +9,4 @@ public class HotlineSearchPage extends BasePage{
         super(driver);
     }
     public WebElement resultOfSearching(){return waitElementToBeVisible("//div[@class = 'search__title']");}
-
-
 }
