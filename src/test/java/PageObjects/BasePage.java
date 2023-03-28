@@ -17,7 +17,7 @@ public class BasePage {
     public WebElement findElement(String locator){
         return driver.findElement(By.xpath(locator));}
 
-    int basicTime = 10;
+    int basicTime = 15;
 
     public WebElement waitElementToBeVisible (String locator){
         WebDriverWait wait = new WebDriverWait(driver,  Duration.ofSeconds(basicTime));
@@ -31,6 +31,9 @@ public class BasePage {
     }
 
     public void openWebsite(String url){driver.get(url);}
+
+
+
 
 
 
