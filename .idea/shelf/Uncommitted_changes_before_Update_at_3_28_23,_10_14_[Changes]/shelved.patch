@@ -1,0 +1,160 @@
+Index: src/test/java/PageObjects/HotlineHomepage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package PageObjects;\n\nimport Tests.TestInit;\nimport org.openqa.selenium.By;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.interactions.Actions;\nimport org.openqa.selenium.support.ui.Wait;\n\nimport java.util.List;\n\n\npublic class HotlineHomepage extends BasePage {\n    public HotlineHomepage(WebDriver driver) {\n        super(driver);\n    }\n    public void goToHotline(){openWebsite(\"https://hotline.ua/\");}\n\n    public void clickOnCityButton(){waitElementToBeVisible(\"//div[@title]\").click();}\n//    public void cityFindField(){waitElementToBeVisible(\"//*[@placeholder=\\\"Почніть вводити назву\\\"]\").sendKeys(\"Житомир\\n\");}\n//    public void highlightingCityElements(){waitElementsToBeVisible(\"//*[@aria-activedescendant=\\\"autosuggest__results-item--0\\\"]\");}\n    public void clickOnPoltavaButton(){waitElementToBeVisible(\"//span[contains(text(),'Полтава')]\").click();}\n\n    public WebElement poltavaButton(){return driver.findElement((By.xpath(\"//*[contains(text(),'Полтава')]\")));}\n\n    public WebElement searchField(){return driver.findElement(By.xpath(\"//*[@type = 'text' and @autocomplete='off']\"));}\n    public void clickOnSearchButton(){waitElementToBeVisible(\"//*[@class = 'search__btn flex middle-xs center-xs']\").click();}\n    public void clickOnCatalogButton(){waitElementToBeVisible(\"//*[@class='header-catalog-button']\").click();}\n    public void clickOnSomeButtons(){waitElementsToBeVisible(\"//*[@class = 'menu-main__item']\").forEach(WebElement::isSelected);}\n    public void showAllElements() {\n        List<WebElement> elements = waitElementsToBeVisible(\"//*[@class = 'menu-main__item']\");\n        for (WebElement element : elements) {\n            Actions action = new Actions(driver);\n            action.moveToElement(element).perform();\n            TestInit testInit = new TestInit();\n            testInit.sleep(5);\n        }\n    }\n    public void changeFirstLanguage() {\n        waitElementToBeVisible(\"//div[contains(@class, 'lang-button')]\").click();\n        waitElementToBeVisible(\"//*[contains(@class, 'lang-item') and  contains(text(),'RU')]\").click();}\n\n    public void changeSecondLanguage () {\n        waitElementToBeVisible(\"//div[contains(@class, 'lang-button')]\").click();\n        waitElementToBeVisible(\"//*[contains(@class, 'lang-item') and  contains(text(),'UA')]\").click();}\n\n    public void switchFirstLanguages() {waitElementToBeVisible(\"//div[@data-eventlabel = 'ru']\").click();}\n\n    public void switchSecondLanguages() {waitElementToBeVisible(\"//div[@data-eventlabel = 'uk']\").click();}\n\n//    public WebElement changeLanguage(){return driver.findElement((By.xpath(\"//div[contains(@class, 'lang-button')]\")));}\n\n    public WebElement resultOfLanguageChange(){return waitElementToBeVisible(\"//div[@class = 'location__city']\");}\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/PageObjects/HotlineHomepage.java b/src/test/java/PageObjects/HotlineHomepage.java
+--- a/src/test/java/PageObjects/HotlineHomepage.java	(revision 0ef73c5a2ddd14408b468941e1bcd13e25b2b0b5)
++++ b/src/test/java/PageObjects/HotlineHomepage.java	(date 1679987598248)
+@@ -52,5 +52,10 @@
+ 
+     public WebElement resultOfLanguageChange(){return waitElementToBeVisible("//div[@class = 'location__city']");}
+ 
++    public void ClickOnHotlineFinanceButton(){waitElementsToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").forEach(WebElement::click);}
++
++//    public void ClickOnHotlineFinanceButton(){waitElementToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").click();}
++
++
+ 
+ }
+Index: src/test/java/PageObjects/BasePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package PageObjects;\n\nimport org.openqa.selenium.By;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.WebElement;\nimport org.openqa.selenium.support.ui.ExpectedConditions;\nimport org.openqa.selenium.support.ui.WebDriverWait;\n\nimport java.time.Duration;\nimport java.util.List;\n\npublic class BasePage {\n    public WebDriver driver;\n    public BasePage(WebDriver driver){\n        this.driver=driver;\n    }\n    public WebElement findElement(String locator){\n        return driver.findElement(By.xpath(locator));}\n\n    int basicTime = 10;\n\n    public WebElement waitElementToBeVisible (String locator){\n        WebDriverWait wait = new WebDriverWait(driver,  Duration.ofSeconds(basicTime));\n        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));\n    }\n\n    public List<WebElement> waitElementsToBeVisible (String locator){\n        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(basicTime));\n        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));\n        return driver.findElements(By.xpath(locator));\n    }\n\n    public void openWebsite(String url){driver.get(url);}\n\n\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/PageObjects/BasePage.java b/src/test/java/PageObjects/BasePage.java
+--- a/src/test/java/PageObjects/BasePage.java	(revision 0ef73c5a2ddd14408b468941e1bcd13e25b2b0b5)
++++ b/src/test/java/PageObjects/BasePage.java	(date 1679987598247)
+@@ -17,7 +17,7 @@
+     public WebElement findElement(String locator){
+         return driver.findElement(By.xpath(locator));}
+ 
+-    int basicTime = 10;
++    int basicTime = 15;
+ 
+     public WebElement waitElementToBeVisible (String locator){
+         WebDriverWait wait = new WebDriverWait(driver,  Duration.ofSeconds(basicTime));
+@@ -35,4 +35,7 @@
+ 
+ 
+ 
++
++
++
+ }
+Index: src/test/java/Tests/HotlineFinanceTabTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/Tests/HotlineFinanceTabTest.java b/src/test/java/Tests/HotlineFinanceTabTest.java
+new file mode 100644
+--- /dev/null	(date 1679987598249)
++++ b/src/test/java/Tests/HotlineFinanceTabTest.java	(date 1679987598249)
+@@ -0,0 +1,34 @@
++package Tests;
++
++import PageObjects.HotlineFinanceTab;
++import PageObjects.HotlineHomepage;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++import java.util.ArrayList;
++
++public class HotlineFinanceTabTest extends TestInit {
++    @Test
++    public void BrowserTabs (){
++        HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
++        hotlineHomepage.goToHotline();
++        hotlineHomepage.clickOnCatalogButton();
++        hotlineHomepage.clickOnSomeButtons();
++        hotlineHomepage.ClickOnHotlineFinanceButton();
++
++        ArrayList tabs2 = new ArrayList (driver.getWindowHandles());
++        driver.switchTo().window((String) tabs2.get(2));
++
++        HotlineFinanceTab hotlineFinanceTab = new HotlineFinanceTab(driver);
++        Assert.assertTrue(hotlineFinanceTab.OsagoButton().isDisplayed());
++
++        sleep(5);
++
++        driver.switchTo().window((String) tabs2.get(1));
++        Assert.assertTrue(hotlineFinanceTab.OsagoButton().isDisplayed());
++
++
++
++
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"fa05349e-57a8-4b7f-980f-279bc109faed\" name=\"Changes\" comment=\"he\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/PageObjects/HotlineHomepage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/PageObjects/HotlineHomepage.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"IhorBranch\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n    <option name=\"SWAP_SIDES_IN_COMPARE_BRANCHES\" value=\"true\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"importingSettings\">\n      <MavenImportingSettings>\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\n      </MavenImportingSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2N3LfgJEaO38EQXwYiVEhrDOdgF\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Users/igor/IdeaProjects/OurFirstProject&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;\n  }\n}</component>\n  <component name=\"RunManager\" selected=\"TestNG.HotlineSearchTest\">\n    <configuration name=\"HotlineCityChangingTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"OurFirstProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.HotlineCityChangingTest\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"HotlineSearchTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"OurFirstProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.HotlineSearchTest\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"LanguageChange\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"OurFirstProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.LanguageChange\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"LanguageChange.testLanguageChange\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"OurFirstProject\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Tests.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Tests\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Tests.LanguageChange\" />\n      <option name=\"METHOD_NAME\" value=\"testLanguageChange\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"TestNG.HotlineSearchTest\" />\n        <item itemvalue=\"TestNG.LanguageChange\" />\n        <item itemvalue=\"TestNG.LanguageChange.testLanguageChange\" />\n        <item itemvalue=\"TestNG.HotlineCityChangingTest\" />\n        <item itemvalue=\"TestNG.LanguageChange.testLanguageChange\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"fa05349e-57a8-4b7f-980f-279bc109faed\" name=\"Changes\" comment=\"\" />\n      <created>1678887925507</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1678887925507</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"hehe\">\n      <created>1678964776433</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1678964776433</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"hehe\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"hehe\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0ef73c5a2ddd14408b468941e1bcd13e25b2b0b5)
++++ b/.idea/workspace.xml	(date 1679987386299)
+@@ -6,7 +6,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="fa05349e-57a8-4b7f-980f-279bc109faed" name="Changes" comment="he">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObjects/HotlineHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageObjects/HotlineHomepage.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,7 +22,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="IhorBranch" />
++        <entry key="$PROJECT_DIR$" value="SortGoods" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -130,11 +129,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.HotlineSearchTest" />
++        <item itemvalue="TestNG.LanguageChange.testLanguageChange" />
+         <item itemvalue="TestNG.LanguageChange" />
+-        <item itemvalue="TestNG.LanguageChange.testLanguageChange" />
++        <item itemvalue="TestNG.HotlineSearchTest" />
+         <item itemvalue="TestNG.HotlineCityChangingTest" />
+-        <item itemvalue="TestNG.LanguageChange.testLanguageChange" />
++        <item itemvalue="TestNG.HotlineSearchTest" />
+       </list>
+     </recent_temporary>
+   </component>
+Index: src/test/java/PageObjects/HotlineFinanceTab.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/PageObjects/HotlineFinanceTab.java b/src/test/java/PageObjects/HotlineFinanceTab.java
+new file mode 100644
+--- /dev/null	(date 1679987598248)
++++ b/src/test/java/PageObjects/HotlineFinanceTab.java	(date 1679987598248)
+@@ -0,0 +1,16 @@
++package PageObjects;
++
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++
++import java.util.ArrayList;
++
++public class HotlineFinanceTab extends BasePage {
++    public HotlineFinanceTab(WebDriver driver) {
++        super(driver);
++    }
++    public WebElement OsagoButton(){ return waitElementToBeVisible("//*[@alt='osago']");}
++
++
++
++}
