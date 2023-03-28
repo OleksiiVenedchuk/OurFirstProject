@@ -33,7 +33,7 @@ public class HotlineHomepage extends BasePage {
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
             TestInit testInit = new TestInit();
-            testInit.sleep(5);
+            testInit.sleep(1);
         }
     }
     public void changeFirstLanguage() {
@@ -56,6 +56,23 @@ public class HotlineHomepage extends BasePage {
 
 //    public void ClickOnHotlineFinanceButton(){waitElementToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").click();}
 
+    public void clickOnLinkComp(){waitElementToBeVisible("//*[contains(@class, 'categories') and contains(@data-eventlabel,'ютери, Мережі')]").click();}
 
+    public void clickOnLinkNote(){waitElementToBeVisible("//div[contains(text(), 'Ноутбуки')]").click();}
+
+    public void clickOnLinkSortGoods(){waitElementToBeVisible("//*[@class='select__field']").click();}
+
+    public void sortGoods() {
+        List<WebElement> elements = waitElementsToBeVisible("//option");
+        for (WebElement element : elements) {
+            Actions action = new Actions(driver);
+            HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
+            hotlineHomepage.clickOnLinkSortGoods();
+            action.click(element).perform();
+//            action.moveToElement(element).perform();
+            TestInit testInit = new TestInit();
+            testInit.sleep(5);
+        }
+    }
 
 }
