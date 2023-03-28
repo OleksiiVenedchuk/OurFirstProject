@@ -52,5 +52,10 @@ public class HotlineHomepage extends BasePage {
 
     public WebElement resultOfLanguageChange(){return waitElementToBeVisible("//div[@class = 'location__city']");}
 
+    public void ClickOnHotlineFinanceButton(){waitElementsToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").forEach(WebElement::click);}
+
+//    public void ClickOnHotlineFinanceButton(){waitElementToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").click();}
+
+
 
 }
