@@ -2,10 +2,12 @@ package PageObjects;
 
 import Tests.TestInit;
 import org.openqa.selenium.By;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.Select;
+//import org.openqa.selenium.support.ui.Wait;
 
 import java.util.List;
 
@@ -52,27 +54,22 @@ public class HotlineHomepage extends BasePage {
 
     public WebElement resultOfLanguageChange(){return waitElementToBeVisible("//div[@class = 'location__city']");}
 
-    public void ClickOnHotlineFinanceButton(){waitElementsToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").forEach(WebElement::click);}
+//    public void ClickOnHotlineFinanceButton(){waitElementsToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").forEach(WebElement::click);}
 
-//    public void ClickOnHotlineFinanceButton(){waitElementToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").click();}
+    public void ClickOnHotlineFinanceButton(){waitElementToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").click();}
 
     public void clickOnLinkComp(){waitElementToBeVisible("//*[contains(@class, 'categories') and contains(@data-eventlabel,'ютери, Мережі')]").click();}
 
-    public void clickOnLinkNote(){waitElementToBeVisible("//div[contains(text(), 'Ноутбуки')]").click();}
-
-    public void clickOnLinkSortGoods(){waitElementToBeVisible("//*[@class='select__field']").click();}
-
-    public void sortGoods() {
-        List<WebElement> elements = waitElementsToBeVisible("//option");
-        for (WebElement element : elements) {
-            Actions action = new Actions(driver);
-            HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
-            hotlineHomepage.clickOnLinkSortGoods();
-            action.click(element).perform();
-//            action.moveToElement(element).perform();
+    public void clickAllPopularGoods() {
+        List<WebElement> elements = waitElementsToBeVisible("//*[@class = 'tabs-list__item']");
+        for (int i = 0; i <=3; i++) {
+            elements.get(i).click();
             TestInit testInit = new TestInit();
-            testInit.sleep(5);
+            testInit.sleep(2);
         }
     }
+
+
+
 
 }
