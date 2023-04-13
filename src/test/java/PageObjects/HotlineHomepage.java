@@ -74,19 +74,4 @@ public class HotlineHomepage extends BasePage {
         }
     }
 
-//    public void sortGoods() {
-//        List<WebElement> elements = waitElementsToBeVisible("//div[@class='select hidden-below-xl']//option[@value]");
-//        for (WebElement element : elements) {
-//            Actions action = new Actions(driver);
-//            HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
-//            hotlineHomepage.clickOnLinkSortGoods();
-//            action.click(element).perform();
-////            action.moveToElement(element).perform();
-//            TestInit testInit = new TestInit();
-//            testInit.sleep(5);
-//        }
-//    }
-//public WebElement sortGoods(){return waitElementToBeVisible("//option[@selected='selected']");}
-
-
 }
