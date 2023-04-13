@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.Wait;
 
 import java.util.List;
 
-
 public class HotlineHomepage extends BasePage {
     public HotlineHomepage(WebDriver driver) {
         super(driver);
@@ -62,17 +61,6 @@ public class HotlineHomepage extends BasePage {
 
     public void clickOnLinkSortGoods(){waitElementToBeVisible("//*[@class='select__field']").click();}
 
-    public void sortGoods() {
-        List<WebElement> elements = waitElementsToBeVisible("//option");
-        for (WebElement element : elements) {
-            Actions action = new Actions(driver);
-            HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
-            hotlineHomepage.clickOnLinkSortGoods();
-            action.click(element).perform();
-//            action.moveToElement(element).perform();
-            TestInit testInit = new TestInit();
-            testInit.sleep(5);
-        }
-    }
+
 
 }
