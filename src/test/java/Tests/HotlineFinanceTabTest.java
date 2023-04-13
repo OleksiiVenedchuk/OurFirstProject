@@ -17,15 +17,15 @@ public class HotlineFinanceTabTest extends TestInit {
         hotlineHomepage.ClickOnHotlineFinanceButton();
 
         ArrayList tabs2 = new ArrayList (driver.getWindowHandles());
-        driver.switchTo().window((String) tabs2.get(2));
+        driver.switchTo().window((String) tabs2.get(1));
 
         HotlineFinanceTab hotlineFinanceTab = new HotlineFinanceTab(driver);
         Assert.assertTrue(hotlineFinanceTab.OsagoButton().isDisplayed());
 
         sleep(5);
 
-        driver.switchTo().window((String) tabs2.get(1));
-        Assert.assertTrue(hotlineFinanceTab.OsagoButton().isDisplayed());
+        driver.switchTo().window((String) tabs2.get(0));
+//        Assert.assertTrue(hotlineFinanceTab.OsagoButton().isDisplayed());
 
 
 

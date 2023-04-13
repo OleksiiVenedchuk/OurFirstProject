@@ -1,6 +1,10 @@
 package Tests;
 
 import PageObjects.HotlineHomepage;
+import PageObjects.PageComp;
+import PageObjects.PageNote;
+import PageObjects.SearchPageNotebook;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 public class SortGoods extends TestInit{
 
@@ -9,18 +13,27 @@ public class SortGoods extends TestInit{
         HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
         hotlineHomepage.goToHotline();
         hotlineHomepage.clickOnLinkComp();
-        hotlineHomepage.clickOnLinkNote();
-//        hotlineHomepage.clickOnLinkSortGoods();
-        hotlineHomepage.sortGoods();
+        PageComp pageComp = new PageComp(driver);
+        pageComp.clickOnLinkNote();
+        PageNote pageNote = new PageNote(driver);
+        pageNote.clickOnLinkSortGoods();
+        sleep(1);
+        pageNote.sortGoods();
     }
 
-//    public void Search(){
-//        HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
-//        hotlineHomepage.goToHotline();
-//        hotlineHomepage.searchField().sendKeys("Навушники TWS JBL Wave 200TWS Black (JBLW200TWSBLK)");
-//        hotlineHomepage.clickOnSearchButton();
-//        HotlineSearchPage hotlineSearchPage = new HotlineSearchPage(driver);
+    @Test
+    public void SearchNote(){
+        HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
+        hotlineHomepage.goToHotline();
+        hotlineHomepage.searchField().sendKeys("Ноутбук");
+        hotlineHomepage.clickOnSearchButton();
+        SearchPageNotebook searchPageNotebook = new SearchPageNotebook(driver);
+        searchPageNotebook.clickOnSearchLinkNote();
+        PageNote pageNote = new PageNote(driver);
+        pageNote.clickOnLinkSortGoods();
+        sleep(1);
+        pageNote.sortGoods();
 //        Assert.assertEquals(hotlineSearchPage.resultOfSearching().getText(), "За запитом «Навушники TWS JBL Wave 200TWS Black (JBLW200TWSBLK)» знайдено 1 товар");
-//    }
+    }
 
 }

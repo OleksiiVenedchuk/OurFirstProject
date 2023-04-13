@@ -14,6 +14,8 @@ public class HotlineLoginPage extends BasePage{
     public WebElement passwordField(){return driver.findElement(By.xpath("//*[@class='field']"));}
     public void enterButtonClick(){waitElementToBeVisible("//*[@class='btn-graphite btn-cell']").click();}
 
+    public void enterButtonGoogle(){waitElementToBeVisible("//*[@id='googleLogin']").click();}
+
 
 
 }
