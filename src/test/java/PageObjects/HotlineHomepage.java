@@ -55,38 +55,12 @@ public class HotlineHomepage extends BasePage {
 
 //    public void ClickOnHotlineFinanceButton(){waitElementToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").click();}
 
+    public void clickOnLinkComp(){waitElementToBeVisible("//*[contains(@class, 'categories') and contains(@data-eventlabel,'ютери, Мережі')]").click();}
+
+    public void clickOnLinkNote(){waitElementToBeVisible("//div[contains(text(), 'Ноутбуки')]").click();}
 
     public void clickOnLinkSortGoods(){waitElementToBeVisible("//*[@class='select__field']").click();}
 
-    public WebElement footerLogo(){ return waitElementToBeVisible("//*[@class='footer__logo']");}
-    public WebElement black_gifts(){ return waitElementToBeVisible("//*[@class='services-section__link link--black gifts']");}
-
-    public WebElement headerLogo(){ return waitElementToBeVisible("//div[contains(@class,'logo')]");}
-    public WebElement popularForYouBlockOfButtons(){return waitElementToBeVisible("//section[contains(@class,'section popular-for-you-section content-block')]//div[@class='tabs-list__wrapper']");}
-    public void ClickForYouBlockOfButtons() {
-        List<WebElement> elements = waitElementsToBeVisible("//button[contains(@data-tracking-id, 'index-6')]");
-        for (WebElement element : elements) {
-            Actions action = new Actions(driver);
-            action.click(element).perform();
-//            action.doubleClick(element).perform();
-            TestInit testInit = new TestInit();
-            testInit.sleep(5);
-        }
-    }
-
-//    public void sortGoods() {
-//        List<WebElement> elements = waitElementsToBeVisible("//div[@class='select hidden-below-xl']//option[@value]");
-//        for (WebElement element : elements) {
-//            Actions action = new Actions(driver);
-//            HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
-//            hotlineHomepage.clickOnLinkSortGoods();
-//            action.click(element).perform();
-////            action.moveToElement(element).perform();
-//            TestInit testInit = new TestInit();
-//            testInit.sleep(5);
-//        }
-//    }
-//public WebElement sortGoods(){return waitElementToBeVisible("//option[@selected='selected']");}
 
 
 }
