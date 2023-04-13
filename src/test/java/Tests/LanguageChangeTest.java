@@ -4,7 +4,7 @@ import PageObjects.HotlineHomepage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LanguageChange extends TestInit{
+public class LanguageChangeTest extends TestInit{
 
     @Test
     public void testLanguageChange () {
