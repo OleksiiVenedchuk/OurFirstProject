@@ -160,12 +160,12 @@ public class ReqresTest {
         Assert.assertFalse(actualColors.contains("#53B0AEeee"));
         if (!actualColors.contains("#53B0AEeeee")) {
             System.out.println("Expected color is not present in the list!!!");
-            }
-            //The ! symbol before the actualColors.contains("#53B0AEeeee") expression is a logical NOT operator in Java. It negates the result of the contains() method, which returns true if the actualColors list contains the color "#53B0AEeeee", and false otherwise.
-            //
-            //So, the !actualColors.contains("#53B0AEeeee") expression will evaluate to true if the actualColors list does not contain the color "#53B0AEeeee", and false otherwise.
-            //
-            //In the context of the provided code, the if statement with the ! operator is checking whether the expected color is not present in the actual colors list, and if that's the case, it prints a message to the console.
+        }
+        //The ! symbol before the actualColors.contains("#53B0AEeeee") expression is a logical NOT operator in Java. It negates the result of the contains() method, which returns true if the actualColors list contains the color "#53B0AEeeee", and false otherwise.
+        //
+        //So, the !actualColors.contains("#53B0AEeeee") expression will evaluate to true if the actualColors list does not contain the color "#53B0AEeeee", and false otherwise.
+        //
+        //In the context of the provided code, the if statement with the ! operator is checking whether the expected color is not present in the actual colors list, and if that's the case, it prints a message to the console.
 
     }
 
@@ -186,18 +186,19 @@ public class ReqresTest {
     @Test
     public void singleResourceNotFoundTest() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecification(404));
-       given()
+        given()
                 .when()
                 .get("api/unknown/23")
                 .then().log().all();
     }
+
     @Test
     public void createUsersTest() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecification(201));
         String name = "morpheus";
         String job = "leader";
         RequestUserData user = new RequestUserData("morpheus", "leader");
-       SuccessCreateRequestUserData successCreateRequestUserData = given()
+        SuccessCreateRequestUserData successCreateRequestUserData = given()
                 .body(user)
                 .when()
                 .post("api/users")

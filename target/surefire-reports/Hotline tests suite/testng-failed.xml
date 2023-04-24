@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Hotline tests suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Oleksii&#039;s tests(failed)" verbose="0">
+    <classes>
+      <class name="Tests.HotlineRegistrationTest">
+        <methods>
+          <include name="Registration"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.HotlineRegistrationTest -->
+      <class name="Tests.HotlineCatalogTest">
+        <methods>
+          <include name="Catalog"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.HotlineCatalogTest -->
+      <class name="Tests.PopularForYouBlockTest">
+        <methods>
+          <include name="Popular"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.PopularForYouBlockTest -->
+    </classes>
+  </test> <!-- Oleksii's tests(failed) -->
+</suite> <!-- Failed suite [Hotline tests suite] -->

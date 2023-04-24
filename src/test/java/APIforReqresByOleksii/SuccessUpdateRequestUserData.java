@@ -10,9 +10,8 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SuccessUpdateRequestUserData {
-        private String name;
-        private String job;
-        private Date updatedAt;
+    private String name;
+    private String job;
+    private Date updatedAt;
 
-//    public SuccessUpdateRequestUserData() {}
 }

@@ -12,8 +12,4 @@ import java.util.Date;
 public class RequestUserData {
         private String name;
         private String job;
-//        private String id;
-//        private Date createdAt;
-
-//    public RequestUserData() {}
 }

@@ -17,7 +17,7 @@ public class SortGoods extends TestInit{
         pageComp.clickOnLinkNote();
         PageNote pageNote = new PageNote(driver);
         pageNote.clickOnLinkSortGoods();
-        sleep(1);
+        sleep(2);
         pageNote.sortGoods();
     }
 
@@ -31,7 +31,7 @@ public class SortGoods extends TestInit{
         searchPageNotebook.clickOnSearchLinkNote();
         PageNote pageNote = new PageNote(driver);
         pageNote.clickOnLinkSortGoods();
-        sleep(1);
+        sleep(6);
         pageNote.sortGoods();
 //        Assert.assertEquals(hotlineSearchPage.resultOfSearching().getText(), "За запитом «Навушники TWS JBL Wave 200TWS Black (JBLW200TWSBLK)» знайдено 1 товар");
     }

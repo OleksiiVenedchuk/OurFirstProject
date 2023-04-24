@@ -20,7 +20,7 @@ public class HotlineRegistrationPage extends BasePage {
 
     public WebElement emailField() throws InterruptedException {
         WebElement button = driver.findElement(By.xpath("//*[@class='field m_b-sm']"));
-        Thread.sleep(1000); // задержка в 1 секунд
+        Thread.sleep(2000); // задержка в 1 секунд
         return button;
     }
 
@@ -28,7 +28,7 @@ public class HotlineRegistrationPage extends BasePage {
 
     public WebElement nameField() throws InterruptedException {
         WebElement button = driver.findElement(By.xpath("//*[@name='name']"));
-        Thread.sleep(1000); // задержка в 1 секунд
+        Thread.sleep(2000); // задержка в 1 секунд
         return button;
     }
 

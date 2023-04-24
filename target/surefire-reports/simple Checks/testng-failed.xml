@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [simple Checks]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="First suite of tests(failed)" verbose="0">
+    <classes>
+      <class name="Tests.HotlineLoginTest">
+        <methods>
+          <include name="Login" invocation-numbers="1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.HotlineLoginTest -->
+    </classes>
+  </test> <!-- First suite of tests(failed) -->
+  <test thread-count="5" name="Other tests suite(failed)" verbose="0">
+    <classes>
+      <class name="Tests.PopularForYouBlockTest">
+        <methods>
+          <include name="Popular"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.PopularForYouBlockTest -->
+      <class name="Tests.HotlineRegistrationTest">
+        <methods>
+          <include name="Registration"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.HotlineRegistrationTest -->
+    </classes>
+  </test> <!-- Other tests suite(failed) -->
+</suite> <!-- Failed suite [simple Checks] -->

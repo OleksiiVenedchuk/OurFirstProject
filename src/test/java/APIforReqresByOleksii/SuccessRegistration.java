@@ -26,5 +26,4 @@ public class SuccessRegistration {
 //    public SuccessRegistration () {}
 
 
-
 }
