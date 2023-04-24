@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResourceData {
-        private Integer id;
-        private String name;
-        private Integer year;
-        private String color;
-        private String pantone_value;
+    private Integer id;
+    private String name;
+    private Integer year;
+    private String color;
+    private String pantone_value;
 
 //    public ColorsData(Integer id, String name, Integer year, String color, String pantone_value) {
 //        this.id = id;

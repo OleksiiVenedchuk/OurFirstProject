@@ -9,8 +9,8 @@ public class HotlineHeaderLogoTest extends TestInit{
     @Test
     public void HeaderLogo(){
         HotlineHomepage hotlineHomepage = new HotlineHomepage(driver);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         hotlineHomepage.goToHotline();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView();", hotlineHomepage.black_gifts());
         hotlineHomepage.black_gifts().click();
         Assert.assertTrue(hotlineHomepage.headerLogo().isDisplayed());

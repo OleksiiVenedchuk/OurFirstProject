@@ -18,9 +18,9 @@ public class PageNote extends BasePage{
         for (int i = 0; i < 7; i++) {
             select.selectByIndex(i);
             TestInit testInit = new TestInit();
-            testInit.sleep(1);
+            testInit.sleep(3);
             selectElement.click();
-            testInit.sleep(1);
+            testInit.sleep(3);
         }
 
     }

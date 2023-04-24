@@ -55,7 +55,7 @@ public class HotlineHomepage extends BasePage {
 
 //    public void ClickOnHotlineFinanceButton(){waitElementsToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").forEach(WebElement::click);}
 
-    public void ClickOnHotlineFinanceButton(){waitElementToBeVisible("//*[@href='//hotline.finance/ua?utm_source=hotline.ua&utm_medium=cpc&utm_campaign=catalogonmainpage']").click();}
+    public void ClickOnHotlineFinanceButton(){waitElementToBeVisible("//a[contains(text(),'HOTLINE.FINANCE')]").click();}
 
 
     public void clickOnLinkComp(){waitElementToBeVisible("//*[contains(@class, 'categories') and contains(@data-eventlabel,'ютери, Мережі')]").click();}
@@ -63,7 +63,7 @@ public class HotlineHomepage extends BasePage {
     public void clickAllPopularGoods() {
         List<WebElement> elements = waitElementsToBeVisible("//*[@class = 'tabs-list__item']");
         for (int i = 0; i <=3; i++) {
-            elements.get(i).click();
+            elements.get(i).click();}}
 
     public void clickOnLinkSortGoods(){waitElementToBeVisible("//*[@class='select__field']").click();}
 
@@ -79,7 +79,7 @@ public class HotlineHomepage extends BasePage {
             action.click(element).perform();
 //            action.doubleClick(element).perform();
             TestInit testInit = new TestInit();
-            testInit.sleep(2);
+            testInit.sleep(3);
         }
     }
 
