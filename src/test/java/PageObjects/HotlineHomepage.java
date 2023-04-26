@@ -63,6 +63,7 @@ public class HotlineHomepage extends BasePage {
     public void clickAllPopularGoods() {
         List<WebElement> elements = waitElementsToBeVisible("//*[@class = 'tabs-list__item']");
         for (int i = 0; i <=3; i++) {
+
             elements.get(i).click();}}
 
     public void clickOnLinkSortGoods(){waitElementToBeVisible("//*[@class='select__field']").click();}

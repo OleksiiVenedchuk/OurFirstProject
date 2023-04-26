@@ -14,7 +14,9 @@ public class TestInit {
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--start-maximized");
+//        options.addArguments("--start-maximized");
+        options.addArguments("--headless=true");
+
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
