@@ -3,24 +3,41 @@
 <suite name="Failed suite [Hotline tests suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Oleksii&#039;s tests(failed)" verbose="0">
     <classes>
-      <class name="Tests.HotlineRegistrationTest">
+      <class name="Tests.HotlineCityChangingTest">
         <methods>
-          <include name="Registration"/>
+          <include name="CityChanging"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.HotlineRegistrationTest -->
-      <class name="Tests.HotlineCatalogTest">
+      </class> <!-- Tests.HotlineCityChangingTest -->
+      <class name="Tests.HotlineFinanceTabTest">
         <methods>
-          <include name="Catalog"/>
+          <include name="BrowserTabs"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Tests.HotlineCatalogTest -->
-      <class name="Tests.PopularForYouBlockTest">
-        <methods>
-          <include name="Popular"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Tests.PopularForYouBlockTest -->
+      </class> <!-- Tests.HotlineFinanceTabTest -->
     </classes>
   </test> <!-- Oleksii's tests(failed) -->
+  <test thread-count="5" name="Ihor&#039;s tests(failed)" verbose="0">
+    <classes>
+      <class name="Tests.LanguageChangeTest">
+        <methods>
+          <include name="testLanguageChange"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.LanguageChangeTest -->
+      <class name="Tests.CheckingPopularGoods">
+        <methods>
+          <include name="PopularGoods"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.CheckingPopularGoods -->
+      <class name="Tests.SortGoods">
+        <methods>
+          <include name="SortGoods"/>
+          <include name="SearchNote"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.SortGoods -->
+    </classes>
+  </test> <!-- Ihor's tests(failed) -->
 </suite> <!-- Failed suite [Hotline tests suite] -->

@@ -20,6 +20,8 @@
     <test name = "Ihor's tests">
         <classes>
             <class name="Tests.LanguageChangeTest"/>
+            <class name="Tests.CheckingPopularGoods"/>
+            <class name="Tests.SortGoods"/>
         </classes>
     </test>
 

@@ -1,146 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="9" failed="3" skipped="0">
+<testng-results ignored="0" total="15" passed="9" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-31T15:05:38 EEST" name="Hotline tests suite" finished-at="2023-03-31T15:08:11 EEST" duration-ms="153590">
+  <suite started-at="2023-04-24T18:13:56 EEST" name="Hotline tests suite" finished-at="2023-04-24T18:18:04 EEST" duration-ms="248450">
     <groups>
     </groups>
-    <test started-at="2023-03-31T15:05:38 EEST" name="Oleksii&#039;s tests" finished-at="2023-03-31T15:07:46 EEST" duration-ms="128357">
+    <test started-at="2023-04-24T18:13:56 EEST" name="Oleksii&#039;s tests" finished-at="2023-04-24T18:16:24 EEST" duration-ms="148475">
       <class name="Tests.HotlineFooterLogoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineFooterLogoTest@399f45b1]" started-at="2023-03-31T15:06:24 EEST" name="setUp" finished-at="2023-03-31T15:06:25 EEST" duration-ms="753" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineFooterLogoTest@18078bef]" started-at="2023-04-24T18:15:08 EEST" name="setUp" finished-at="2023-04-24T18:15:09 EEST" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="BottomLogo()[pri:0, instance:Tests.HotlineFooterLogoTest@399f45b1]" started-at="2023-03-31T15:06:25 EEST" name="BottomLogo" finished-at="2023-03-31T15:06:36 EEST" duration-ms="11179" status="PASS">
+        <test-method signature="BottomLogo()[pri:0, instance:Tests.HotlineFooterLogoTest@18078bef]" started-at="2023-04-24T18:15:09 EEST" name="BottomLogo" finished-at="2023-04-24T18:15:13 EEST" duration-ms="3520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BottomLogo -->
       </class> <!-- Tests.HotlineFooterLogoTest -->
       <class name="Tests.HotlineFinanceTabTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineFinanceTabTest@2d7275fc]" started-at="2023-03-31T15:06:02 EEST" name="setUp" finished-at="2023-03-31T15:06:03 EEST" duration-ms="722" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineFinanceTabTest@689604d9]" started-at="2023-04-24T18:15:02 EEST" name="setUp" finished-at="2023-04-24T18:15:03 EEST" duration-ms="1139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="BrowserTabs()[pri:0, instance:Tests.HotlineFinanceTabTest@2d7275fc]" started-at="2023-03-31T15:06:03 EEST" name="BrowserTabs" finished-at="2023-03-31T15:06:24 EEST" duration-ms="21648" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserTabs -->
-      </class> <!-- Tests.HotlineFinanceTabTest -->
-      <class name="Tests.HotlineSearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineSearchTest@35cabb2a]" started-at="2023-03-31T15:07:32 EEST" name="setUp" finished-at="2023-03-31T15:07:33 EEST" duration-ms="861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Search()[pri:0, instance:Tests.HotlineSearchTest@35cabb2a]" started-at="2023-03-31T15:07:33 EEST" name="Search" finished-at="2023-03-31T15:07:46 EEST" duration-ms="13287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search -->
-      </class> <!-- Tests.HotlineSearchTest -->
-      <class name="Tests.HotlineLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineLoginTest@478190fc]" started-at="2023-03-31T15:06:49 EEST" name="setUp" finished-at="2023-03-31T15:06:50 EEST" duration-ms="798" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:Tests.HotlineLoginTest@478190fc]" started-at="2023-03-31T15:06:50 EEST" name="Login" data-provider="testData" finished-at="2023-03-31T15:06:53 EEST" duration-ms="3788" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineLoginTest@478190fc]" started-at="2023-03-31T15:06:53 EEST" name="setUp" finished-at="2023-03-31T15:06:54 EEST" duration-ms="1045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:Tests.HotlineLoginTest@478190fc]" started-at="2023-03-31T15:06:54 EEST" name="Login" data-provider="testData" finished-at="2023-03-31T15:06:59 EEST" duration-ms="4675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineLoginTest@478190fc]" started-at="2023-03-31T15:06:59 EEST" name="setUp" finished-at="2023-03-31T15:07:00 EEST" duration-ms="1158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:Tests.HotlineLoginTest@478190fc]" started-at="2023-03-31T15:07:00 EEST" name="Login" data-provider="testData" finished-at="2023-03-31T15:07:04 EEST" duration-ms="3562" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- Tests.HotlineLoginTest -->
-      <class name="Tests.PopularForYouBlockTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PopularForYouBlockTest@79e2c065]" started-at="2023-03-31T15:07:04 EEST" name="setUp" finished-at="2023-03-31T15:07:05 EEST" duration-ms="1387" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Popular()[pri:0, instance:Tests.PopularForYouBlockTest@79e2c065]" started-at="2023-03-31T15:07:05 EEST" name="Popular" finished-at="2023-03-31T15:07:19 EEST" duration-ms="13533" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="BrowserTabs()[pri:0, instance:Tests.HotlineFinanceTabTest@689604d9]" started-at="2023-04-24T18:15:03 EEST" name="BrowserTabs" finished-at="2023-04-24T18:15:08 EEST" duration-ms="4962" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1f2f5eb2e91c90f10a2f13379b05501a, actions {actions=[org.openqa.selenium.interactions.Sequence@1084ac45]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63714/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1f2f5eb2e91c90f10a2f13379b05501a]]>
+              <![CDATA[Index 1 out of bounds for length 1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1f2f5eb2e91c90f10a2f13379b05501a, actions {actions=[org.openqa.selenium.interactions.Sequence@1084ac45]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63714/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1f2f5eb2e91c90f10a2f13379b05501a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-at PageObjects.HotlineHomepage.ClickForYouBlockOfButtons(HotlineHomepage.java:70)
-at Tests.PopularForYouBlockTest.Popular(PopularForYouBlockTest.java:14)
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+at java.base/java.util.Objects.checkIndex(Objects.java:385)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at Tests.HotlineFinanceTabTest.BrowserTabs(HotlineFinanceTabTest.java:20)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -173,47 +66,407 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserTabs -->
+      </class> <!-- Tests.HotlineFinanceTabTest -->
+      <class name="Tests.HotlineSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineSearchTest@313ac989]" started-at="2023-04-24T18:16:17 EEST" name="setUp" finished-at="2023-04-24T18:16:18 EEST" duration-ms="1032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Search()[pri:0, instance:Tests.HotlineSearchTest@313ac989]" started-at="2023-04-24T18:16:18 EEST" name="Search" finished-at="2023-04-24T18:16:24 EEST" duration-ms="6204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+      </class> <!-- Tests.HotlineSearchTest -->
+      <class name="Tests.HotlineLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineLoginTest@4c371370]" started-at="2023-04-24T18:15:21 EEST" name="setUp" finished-at="2023-04-24T18:15:23 EEST" duration-ms="1638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:Tests.HotlineLoginTest@4c371370]" started-at="2023-04-24T18:15:23 EEST" name="Login" data-provider="testData" finished-at="2023-04-24T18:15:25 EEST" duration-ms="2664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineLoginTest@4c371370]" started-at="2023-04-24T18:15:25 EEST" name="setUp" finished-at="2023-04-24T18:15:26 EEST" duration-ms="1066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:Tests.HotlineLoginTest@4c371370]" started-at="2023-04-24T18:15:26 EEST" name="Login" data-provider="testData" finished-at="2023-04-24T18:15:29 EEST" duration-ms="2244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineLoginTest@4c371370]" started-at="2023-04-24T18:15:29 EEST" name="setUp" finished-at="2023-04-24T18:15:30 EEST" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:Tests.HotlineLoginTest@4c371370]" started-at="2023-04-24T18:15:30 EEST" name="Login" data-provider="testData" finished-at="2023-04-24T18:15:32 EEST" duration-ms="2467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+      </class> <!-- Tests.HotlineLoginTest -->
+      <class name="Tests.PopularForYouBlockTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.PopularForYouBlockTest@145f66e3]" started-at="2023-04-24T18:15:32 EEST" name="setUp" finished-at="2023-04-24T18:15:33 EEST" duration-ms="1161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Popular()[pri:0, instance:Tests.PopularForYouBlockTest@145f66e3]" started-at="2023-04-24T18:15:33 EEST" name="Popular" finished-at="2023-04-24T18:15:53 EEST" duration-ms="19898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Popular -->
       </class> <!-- Tests.PopularForYouBlockTest -->
       <class name="Tests.HotlineHeaderLogoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineHeaderLogoTest@38c6f217]" started-at="2023-03-31T15:06:36 EEST" name="setUp" finished-at="2023-03-31T15:06:37 EEST" duration-ms="818" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineHeaderLogoTest@799f10e1]" started-at="2023-04-24T18:15:13 EEST" name="setUp" finished-at="2023-04-24T18:15:14 EEST" duration-ms="1312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="HeaderLogo()[pri:0, instance:Tests.HotlineHeaderLogoTest@38c6f217]" started-at="2023-03-31T15:06:37 EEST" name="HeaderLogo" finished-at="2023-03-31T15:06:49 EEST" duration-ms="11687" status="PASS">
+        <test-method signature="HeaderLogo()[pri:0, instance:Tests.HotlineHeaderLogoTest@799f10e1]" started-at="2023-04-24T18:15:14 EEST" name="HeaderLogo" finished-at="2023-04-24T18:15:21 EEST" duration-ms="7111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HeaderLogo -->
       </class> <!-- Tests.HotlineHeaderLogoTest -->
       <class name="Tests.HotlineCatalogTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineCatalogTest@71809907]" started-at="2023-03-31T15:05:38 EEST" name="setUp" finished-at="2023-03-31T15:05:40 EEST" duration-ms="2073" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineCatalogTest@49ec71f8]" started-at="2023-04-24T18:13:56 EEST" name="setUp" finished-at="2023-04-24T18:13:59 EEST" duration-ms="2590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Catalog()[pri:0, instance:Tests.HotlineCatalogTest@71809907]" started-at="2023-03-31T15:05:40 EEST" name="Catalog" finished-at="2023-03-31T15:05:52 EEST" duration-ms="12631" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="Catalog()[pri:0, instance:Tests.HotlineCatalogTest@49ec71f8]" started-at="2023-04-24T18:13:59 EEST" name="Catalog" finished-at="2023-04-24T18:14:32 EEST" duration-ms="33125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Catalog -->
+      </class> <!-- Tests.HotlineCatalogTest -->
+      <class name="Tests.HotlineCityChangingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineCityChangingTest@35d019a3]" started-at="2023-04-24T18:14:32 EEST" name="setUp" finished-at="2023-04-24T18:14:32 EEST" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CityChanging()[pri:0, instance:Tests.HotlineCityChangingTest@35d019a3]" started-at="2023-04-24T18:14:32 EEST" name="CityChanging" finished-at="2023-04-24T18:15:02 EEST" duration-ms="29541" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[element not interactable: [object HTMLLIElement] has no size and location
-  (Session info: chrome=111.0.5563.147)
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[@title] (tried for 25 second(s) with 500 milliseconds interval)
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6359fff692dfef73f22b0c69486683c8, actions {actions=[org.openqa.selenium.interactions.Sequence@367b22e5]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63247/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6359fff692dfef73f22b0c69486683c8]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53855}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53855/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c451bc4b7b3c4b38b4cfd97bf5742a3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLLIElement] has no size and location
-  (Session info: chrome=111.0.5563.147)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@title] (tried for 25 second(s) with 500 milliseconds interval)
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6359fff692dfef73f22b0c69486683c8, actions {actions=[org.openqa.selenium.interactions.Sequence@367b22e5]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63247/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6359fff692dfef73f22b0c69486683c8
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:53855}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53855/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c451bc4b7b3c4b38b4cfd97bf5742a3
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at PageObjects.BasePage.waitElementToBeVisible(BasePage.java:24)
+at PageObjects.HotlineHomepage.clickOnCityButton(HotlineHomepage.java:20)
+at Tests.HotlineCityChangingTest.CityChanging(HotlineCityChangingTest.java:16)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CityChanging -->
+      </class> <!-- Tests.HotlineCityChangingTest -->
+      <class name="Tests.HotlineRegistrationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineRegistrationTest@3023df74]" started-at="2023-04-24T18:15:53 EEST" name="setUp" finished-at="2023-04-24T18:15:54 EEST" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Registration()[pri:0, instance:Tests.HotlineRegistrationTest@3023df74]" started-at="2023-04-24T18:15:54 EEST" name="Registration" finished-at="2023-04-24T18:16:17 EEST" duration-ms="22719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+      </class> <!-- Tests.HotlineRegistrationTest -->
+    </test> <!-- Oleksii's tests -->
+    <test started-at="2023-04-24T18:16:25 EEST" name="Ihor&#039;s tests" finished-at="2023-04-24T18:18:04 EEST" duration-ms="99844">
+      <class name="Tests.LanguageChangeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LanguageChangeTest@28701274]" started-at="2023-04-24T18:16:25 EEST" name="setUp" finished-at="2023-04-24T18:16:26 EEST" duration-ms="1501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLanguageChange()[pri:0, instance:Tests.LanguageChangeTest@28701274]" started-at="2023-04-24T18:16:26 EEST" name="testLanguageChange" finished-at="2023-04-24T18:16:55 EEST" duration-ms="29005" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(@class, 'lang-button')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54378}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54378/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1168af17cfe5d243b05a98d6217f0261]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(@class, 'lang-button')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54378}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54378/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1168af17cfe5d243b05a98d6217f0261
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at PageObjects.BasePage.waitElementToBeVisible(BasePage.java:24)
+at PageObjects.HotlineHomepage.changeFirstLanguage(HotlineHomepage.java:41)
+at Tests.LanguageChangeTest.testLanguageChange(LanguageChangeTest.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLanguageChange -->
+      </class> <!-- Tests.LanguageChangeTest -->
+      <class name="Tests.SortGoods">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.SortGoods@3754a4bf]" started-at="2023-04-24T18:17:03 EEST" name="setUp" finished-at="2023-04-24T18:17:04 EEST" duration-ms="913" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SearchNote()[pri:0, instance:Tests.SortGoods@3754a4bf]" started-at="2023-04-24T18:17:04 EEST" name="SearchNote" finished-at="2023-04-24T18:17:34 EEST" duration-ms="29434" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //*[@class = 'search-sidebar-catalogs__name link link--black'] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54482/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83c6ab135c1e22672470925b589232a6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@class = 'search-sidebar-catalogs__name link link--black'] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54482/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83c6ab135c1e22672470925b589232a6
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at PageObjects.BasePage.waitElementToBeVisible(BasePage.java:24)
+at PageObjects.SearchPageNotebook.clickOnSearchLinkNote(SearchPageNotebook.java:10)
+at Tests.SortGoods.SearchNote(SortGoods.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchNote -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.SortGoods@3754a4bf]" started-at="2023-04-24T18:17:34 EEST" name="setUp" finished-at="2023-04-24T18:17:35 EEST" duration-ms="1536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SortGoods()[pri:0, instance:Tests.SortGoods@3754a4bf]" started-at="2023-04-24T18:17:35 EEST" name="SortGoods" finished-at="2023-04-24T18:18:04 EEST" duration-ms="29156" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //*[contains(@class, 'categories') and contains(@data-eventlabel,'ютери, Мережі')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54543/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7f2766c978eb6a9d774e01b201d21d8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[contains(@class, 'categories') and contains(@data-eventlabel,'ютери, Мережі')] (tried for 25 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54543/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7f2766c978eb6a9d774e01b201d21d8
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at PageObjects.BasePage.waitElementToBeVisible(BasePage.java:24)
+at PageObjects.HotlineHomepage.clickOnLinkComp(HotlineHomepage.java:61)
+at Tests.SortGoods.SortGoods(SortGoods.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortGoods -->
+      </class> <!-- Tests.SortGoods -->
+      <class name="Tests.CheckingPopularGoods">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CheckingPopularGoods@13c9d689]" started-at="2023-04-24T18:16:55 EEST" name="setUp" finished-at="2023-04-24T18:16:57 EEST" duration-ms="1820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PopularGoods()[pri:0, instance:Tests.CheckingPopularGoods@13c9d689]" started-at="2023-04-24T18:16:57 EEST" name="PopularGoods" finished-at="2023-04-24T18:17:03 EEST" duration-ms="6310" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: headless chrome=112.0.5615.138)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [31fea5dc1f4e3e65b9b99421cdcd00f0, clickElement {id=b432f2d1-d0bf-429e-8526-54ee7ea94dc4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54438/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (31fea5dc1f4e3e65b9b99421cdcd00f0)] -> xpath: //*[@class = 'tabs-list__item']]
+Session ID: 31fea5dc1f4e3e65b9b99421cdcd00f0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=112.0.5615.138)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [31fea5dc1f4e3e65b9b99421cdcd00f0, clickElement {id=b432f2d1-d0bf-429e-8526-54ee7ea94dc4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54438}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54438/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (31fea5dc1f4e3e65b9b99421cdcd00f0)] -> xpath: //*[@class = 'tabs-list__item']]
+Session ID: 31fea5dc1f4e3e65b9b99421cdcd00f0
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -224,11 +477,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-at PageObjects.HotlineHomepage.showAllElements(HotlineHomepage.java:33)
-at Tests.HotlineCatalogTest.Catalog(HotlineCatalogTest.java:17)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at PageObjects.HotlineHomepage.clickAllPopularGoods(HotlineHomepage.java:66)
+at Tests.CheckingPopularGoods.PopularGoods(CheckingPopularGoods.java:9)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -264,110 +516,8 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Catalog -->
-      </class> <!-- Tests.HotlineCatalogTest -->
-      <class name="Tests.HotlineRegistrationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineRegistrationTest@3a93b025]" started-at="2023-03-31T15:07:19 EEST" name="setUp" finished-at="2023-03-31T15:07:20 EEST" duration-ms="905" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Registration()[pri:0, instance:Tests.HotlineRegistrationTest@3a93b025]" started-at="2023-03-31T15:07:20 EEST" name="Registration" finished-at="2023-03-31T15:07:32 EEST" duration-ms="12365" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [af682c6862aebf4eb6c748aa07fb5876, sendKeysToElement {id=bb57938d-d112-46df-8240-b7a2e9348bc5, value=[Ljava.lang.CharSequence;@27fe059d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63794/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (af682c6862aebf4eb6c748aa07fb5876)] -> xpath: //*[@id='passw1']]
-Session ID: af682c6862aebf4eb6c748aa07fb5876]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=111.0.5563.147)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [af682c6862aebf4eb6c748aa07fb5876, sendKeysToElement {id=bb57938d-d112-46df-8240-b7a2e9348bc5, value=[Ljava.lang.CharSequence;@27fe059d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63794/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (af682c6862aebf4eb6c748aa07fb5876)] -> xpath: //*[@id='passw1']]
-Session ID: af682c6862aebf4eb6c748aa07fb5876
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at Tests.HotlineRegistrationTest.Registration(HotlineRegistrationTest.java:14)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Registration -->
-      </class> <!-- Tests.HotlineRegistrationTest -->
-      <class name="Tests.HotlineCityChangingTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HotlineCityChangingTest@72d1ad2e]" started-at="2023-03-31T15:05:53 EEST" name="setUp" finished-at="2023-03-31T15:05:53 EEST" duration-ms="666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="CityChanging()[pri:0, instance:Tests.HotlineCityChangingTest@72d1ad2e]" started-at="2023-03-31T15:05:53 EEST" name="CityChanging" finished-at="2023-03-31T15:06:02 EEST" duration-ms="8732" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CityChanging -->
-      </class> <!-- Tests.HotlineCityChangingTest -->
-    </test> <!-- Oleksii's tests -->
-    <test started-at="2023-03-31T15:07:46 EEST" name="Ihor&#039;s tests" finished-at="2023-03-31T15:08:11 EEST" duration-ms="25144">
-      <class name="Tests.LanguageChangeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LanguageChangeTest@409bf450]" started-at="2023-03-31T15:07:46 EEST" name="setUp" finished-at="2023-03-31T15:07:47 EEST" duration-ms="924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLanguageChange()[pri:0, instance:Tests.LanguageChangeTest@409bf450]" started-at="2023-03-31T15:07:47 EEST" name="testLanguageChange" finished-at="2023-03-31T15:08:11 EEST" duration-ms="24215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLanguageChange -->
-      </class> <!-- Tests.LanguageChangeTest -->
+        </test-method> <!-- PopularGoods -->
+      </class> <!-- Tests.CheckingPopularGoods -->
     </test> <!-- Ihor's tests -->
   </suite> <!-- Hotline tests suite -->
 </testng-results>
